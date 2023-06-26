@@ -254,7 +254,7 @@ a.active::after {
     .navegacao {
         flex-direction: column;
         align-items: end;
-        padding-top: 10px;
+        
     }
   
     .corpo-info {
@@ -263,21 +263,21 @@ a.active::after {
     }
   
     .corpo-info h1 {
-      font-size: 35px;
+      font-size: 30px;
     }
     .corpo-info h1 span {
-        font-weight:800;
+        font-weight:700;
     }
     .corpo-info p {
-        font-size: 40px;
-        padding: 50px 0;
+        font-size: 30px;
+        padding: 20px 0;
     }
     .corpo-info p {
         font-size: 12px;
     }
 
     .corpo--button {
-        padding: 5px 15px;
+        padding: 5px 5px;
     }
   
     .green--relativo {
