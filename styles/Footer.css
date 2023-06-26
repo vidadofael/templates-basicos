@@ -86,5 +86,6 @@
     }
     .img__footer, .footer__enderecos, .footer__formulario {
         margin: 20px 0;
+        max-width: 80%;
     }
 }
