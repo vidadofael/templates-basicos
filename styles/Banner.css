@@ -1,13 +1,12 @@
 /* CORPO BANNER PÁGINA PRINCIPAL */
 .corpo {
   width: 100%;
-  height: 100%;
+
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2%;
-  align-items: center;
   padding-top: 20px;
   position: relative;
 }
@@ -53,15 +52,6 @@
   filter: drop-shadow(-4px -4px 0 #034a27);
 }
 
-.corpo__green--absoluto {
-  position: absolute;
-  width: 100%;
-  height: 1200px;
-  left: 620px;
-  top: 150px;
-  background-color: #036635;
-  border-radius: 50%;
-}
 
 .corpo__green--absoluto img {
   animation: floatAnimation 4s infinite ease-in-out alternate;
@@ -157,9 +147,5 @@
 
   .corpo__button {
     padding: 5px 5px;
-  }
-
-  .corpo__green--relativo {
-    display: none;
   }
 }
