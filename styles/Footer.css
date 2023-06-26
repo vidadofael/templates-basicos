@@ -1,29 +1,25 @@
 .footer {
-    background-color: #026F43; 
-    max-height: 450px;
+    background-color: #026F43;    
     margin-top: 50px;
     padding-top: 80px; 
     padding-bottom: 80px;   
 }
 
 .img__footer img {
-    width: 150px;
-    
+    width: 150px; 
 }
-
 
 .container {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1225px;     
-    
+    max-width: 1225px;  
+    flex-wrap: wrap;   
 }
 
 
 .footer__enderecos {
-    
     color: aliceblue;
 }
 
@@ -54,13 +50,11 @@
 .footer__formulario {
     display: flex;
     flex-direction: column;
-
 }
 
 .form div {
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__form--button {
@@ -83,4 +77,14 @@
 .creditos {
     text-align: center;
     color: white;
+}
+
+@media (max-width:823px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img__footer, .footer__enderecos, .footer__formulario {
+        margin: 20px 0;
+    }
 }
