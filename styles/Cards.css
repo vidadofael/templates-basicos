@@ -49,33 +49,3 @@ main {
     display: flex;
     border-radius: 100px 50em 50em 100px;
 }
-
-
-
-@media (max-width: 386px) {
-    .card img {
-        width: 120px;
-    }
-    .card p {
-        font-size: 14px;
-    }
-    
-
-}
-
-@media (max-width: 682px) {
-    .card img {
-        width: 200px;
-    }
-    .card p {
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-
-
