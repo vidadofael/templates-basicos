@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  overflow-y: hidden;
+  
   overflow-x: hidden;
 }
 
@@ -105,25 +105,25 @@ a.active::after {
   position: relative;
 }
 
-.corpo-info {
+.corpo__info {
   padding-bottom: 230px;
 }
 
-.corpo-info h1 {
+.corpo__info h1 {
   max-width: 600px;
   font-weight: 300;
   font-size: 65px;
 }
-.corpo-info h1 span {
+.corpo__info h1 span {
   color: #036635;
   font-weight: 700;
 }
 
-.corpo-info p {
+.corpo__info p {
   max-width: 600px;
 }
 
-.corpo--button {
+.corpo__button {
   background-color: #036635;
   padding: 10px 35px;
   margin-top: 15px;
@@ -135,14 +135,14 @@ a.active::after {
   cursor: pointer;
 }
 
-.corpo--button:hover {
+.corpo__button:hover {
   filter: drop-shadow(-4px -4px 0 #034a27);
 }
 
 .produto-absoluto {
   position: absolute;
 }
-.green--absoluto {
+.corpo__green--absoluto {
   position: absolute;
   width: 1200px;
   height: 1200px;
@@ -153,11 +153,11 @@ a.active::after {
   border-radius: 50%;
 }
 
-.green--absoluto img {
+.gcorpo__green--absoluto img {
   width: 600px;
 }
 
-.green--absoluto img {
+.corpo__green--absoluto img {
   animation: floatAnimation 4s infinite ease-in-out alternate;
 }
 
@@ -192,38 +192,35 @@ a.active::after {
     align-items: center;
   }
 
-  .corpo-info {
+  .corpo__info {
     padding-bottom: 0;
     text-align: center;
   }
 
-  .corpo-info h1 {
+  .corpo__info h1 {
     font-size: 60px;
     padding-top: 20px;
     
   }
-  .corpo-info h1:nth-child(2) {
+  .corpo__info h1:nth-child(2) {
     font-size: 60px;
     padding: 0 40px;
   }
 
-  .corpo-info p {
+  .corpo__info p {
     padding: 50px 0;
   }
 
-  .green--relativo {
-    width: 50%;
-  }
-
-  .green--absoluto {
+  .corpo__green--absoluto {
     width: 50%;
     height: auto;
     left: 67px;
     top: 323px;
     bottom: 307px;
   }
-  .green--relativo {
+  .corpo__green--relativo {
     display: none;
+    width: 50%;
   }
 }
 
@@ -257,30 +254,30 @@ a.active::after {
         
     }
   
-    .corpo-info {
+    .corpo__info {
       padding-bottom: 0;
       text-align: center;
     }
   
-    .corpo-info h1 {
+    .corpo__info h1 {
       font-size: 30px;
     }
-    .corpo-info h1 span {
+    .corpo__info h1 span {
         font-weight:700;
     }
-    .corpo-info p {
+    .corpo__info p {
         font-size: 30px;
         padding: 20px 0;
     }
-    .corpo-info p {
+    .corpo__info p {
         font-size: 12px;
     }
 
-    .corpo--button {
+    .corpo__button {
         padding: 5px 5px;
     }
   
-    .green--relativo {
+    .corpo__green--relativo {
       display: none;
     }
   
