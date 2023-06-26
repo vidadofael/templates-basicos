@@ -42,6 +42,11 @@ header {
   display: flex;
 }
 
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .social-media img {
   width: 28px;
 }
@@ -49,12 +54,44 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-
-.social-media {
-  display: flex;
-  justify-content: flex-end;
+/*HOVER LINK*/
+/* Estilos para os links */
+/* Estilos para os links */
+a {
+  color: #000; /* Cor padrão dos links */
+  text-decoration: none; /* Remover sublinhado padrão dos links */
+  position: relative; /* Adicionar posição relativa para facilitar o posicionamento da linha */
 }
 
+/* Estilos para a linha inferior no hover */
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 0;
+  height: 2px;
+  background-color: #036635; /* Cor da linha */
+  opacity: 0; /* Inicialmente, a linha é invisível */
+  transition: transform 0.3s, opacity 0.3s; /* Transições suaves para a animação */
+}
+
+/* Estilos para o hover */
+a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  width: 100%; /* Altera a largura da linha para 100% */
+  opacity: 1; /* Torna a linha visível no hover */
+}
+
+/* Estilos para o link ativo */
+a.active::after {
+  background-color: #000; /* Cor da linha para o link ativo */
+  width: 100%; /* Largura total para o link ativo */
+}
+
+/*CORPO DA PÁGINA PRINCIPAL*/
 .corpo {
   width: 100%;
   height: 100%;
@@ -79,11 +116,27 @@ header {
 }
 .corpo-info h1 span {
   color: #036635;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .corpo-info p {
   max-width: 600px;
+}
+
+.corpo--button {
+  background-color: #036635;
+  padding: 10px 35px;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  filter: drop-shadow(3px 3px #034a27);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.corpo--button:hover {
+  filter: drop-shadow(-4px -4px 0 #034a27);
 }
 
 .produto-absoluto {
@@ -103,3 +156,134 @@ header {
 .green--absoluto img {
   width: 600px;
 }
+
+.green--absoluto img {
+  animation: floatAnimation 4s infinite ease-in-out alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(20px) translateY(-20px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/*responsividade (TABLETs) */
+
+@media (min-width: 387px) and (max-width: 768px) {
+  .centro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .social-media {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .corpo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .corpo-info {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .corpo-info h1 {
+    font-size: 60px;
+    padding-top: 20px;
+    
+  }
+  .corpo-info h1:nth-child(2) {
+    font-size: 60px;
+    padding: 0 40px;
+  }
+
+  .corpo-info p {
+    padding: 50px 0;
+  }
+
+  .green--relativo {
+    width: 50%;
+  }
+
+  .green--absoluto {
+    width: 50%;
+    height: auto;
+    left: 67px;
+    top: 323px;
+    bottom: 307px;
+  }
+  .green--relativo {
+    display: none;
+  }
+}
+
+
+/*responsividade (CELULAREs)*/
+@media (max-width: 386px) {
+    .corpo {
+      flex-direction: column;
+      align-items: center;
+      justify-content: none;
+    }
+    .centro {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media img {
+        width: 25px;
+    }
+    .logo img {
+        height: 100px;
+    }
+    
+    .navegacao {
+        flex-direction: column;
+        align-items: end;
+        padding-top: 10px;
+    }
+  
+    .corpo-info {
+      padding-bottom: 0;
+      text-align: center;
+    }
+  
+    .corpo-info h1 {
+      font-size: 35px;
+    }
+    .corpo-info h1 span {
+        font-weight:800;
+    }
+    .corpo-info p {
+        font-size: 40px;
+        padding: 50px 0;
+    }
+    .corpo-info p {
+        font-size: 12px;
+    }
+
+    .corpo--button {
+        padding: 5px 15px;
+    }
+  
+    .green--relativo {
+      display: none;
+    }
+  
+    
+  }
+
