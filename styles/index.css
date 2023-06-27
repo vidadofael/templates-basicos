@@ -44,9 +44,9 @@ nav ul li a {
   text-decoration: none;
   color: #006241;
   font-weight: 500;
-  font-size: 18px;
-  padding: 8px 15px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  padding: 8px 12px;
+  letter-spacing: 1px;
   position: relative; 
   transition: all .3s ease-in-out;
 }
@@ -118,3 +118,12 @@ nav .menu-btn i {
 }
 
 
+.lista__link--menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.img__menu {
+  width: 30px;
+}

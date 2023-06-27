@@ -26,7 +26,7 @@
         <img src="./assets/logo-starbucks2.png" alt="Logo Starbucks do Menu">
       </div>
       <div class="menu-btn">
-        <i class="fa fa-navicon" onclick="mostrarMenu()"></i>
+        <i class="fa fa-navicon" id="menu-icon" onclick="mostrarMenu()"></i>
       </div>
       <!-- <div>
         <img src="./assets/icon-instagram.png" alt="Link para o Instagram">
@@ -39,18 +39,14 @@
         <li><a href="#whatsNew">What's New</a></li>
         <li><a href="#Delivery">Delivery</a></li>
         <li><a href="#Contact">Contact</a></li>
+        <li class="lista__link--menu">
+          <a href="http://www.instagram.com"><img class="img__menu" src="./assets/icon-instagram.png" alt="Link para o Instagram"></img></a>
+          <a href="http://www.twitter.com"><img class="img__menu" src="./assets/icon-twitter.png" alt="Link para o Twitter"></img></a>
+          <a href="http://www.facebook.com"><img class="img__menu" src="./assets/icon-face.png" alt="Link para o Facebook"></img></a>
+        </li>
       </ul>
 
     </nav>
-    <script>
-      function mostrarMenu() {
-        var lista = document.querySelector('nav ul');
-        if (lista.classList.contains('open')) {
-          lista.classList.remove('open');
-        } else {
-          lista.classList.add('open');
-        }
-      }
-    </script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>

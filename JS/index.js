@@ -7,8 +7,12 @@ var linkAtivo = document.querySelector('nav ul li a');
 function mostrarMenu() {
     if (lista.classList.contains('open')) {
         lista.classList.remove('open');
+        menuBtn.classList.remove('fa-times');
+        menuBtn.classList.add('fa-navicon')
     }else{
         lista.classList.add('open');
+        menuBtn.classList.remove('fa-navicon');
+        menuBtn.classList.add('fa-times');
     }
 }
 
@@ -19,3 +23,6 @@ function linkActivo() {
         linkAtivo.classList.add('active')
     }
 }
+
+
+
