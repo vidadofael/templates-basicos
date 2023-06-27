@@ -57,8 +57,8 @@ a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
+  right: -50%;
+  transform: translateX(0) scaleX(0);
   transform-origin: center;
   width: 0;
   height: 2px;
@@ -68,7 +68,7 @@ a::after {
 }
 
 a:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(.7);
   width: 100%; 
   opacity: 1;
 }
@@ -110,6 +110,10 @@ nav .menu-btn i {
   nav ul li a:hover {
     background: #036635;
     color: white;
+    border-radius: 3px;
+  }
+  a:hover::after {
+    opacity: 0;
   }
 }
 
