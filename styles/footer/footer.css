@@ -41,7 +41,7 @@ footer {
 .form__news {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 100%;
   padding: 25px 0;
 }
 
@@ -91,5 +91,8 @@ footer {
     }
     footer {
         padding: 20px 10px;
+    }
+    .form__news {
+        align-items: center;
     }
 }
