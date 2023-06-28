@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/banner/banner.css">
     <link rel="stylesheet" href="./styles/cards/cards.css">
     <link rel="stylesheet" href="./styles/delivery/delivery.css">
+    <link rel="stylesheet" href="./styles/footer/footer.css">
     
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,8 +42,8 @@
       <ul>
         <li><a href="#home" onclick="linkActivo()">Home</a></li>
         <li><a href="#whatsNew">What's New</a></li>
-        <li><a href="#Delivery">Delivery</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li class="lista__link--menu">
           <a href="http://www.instagram.com"><img class="img__menu" src="./assets/icon-instagram.png" alt="Link para o Instagram"></img></a>
           <a href="http://www.twitter.com"><img class="img__menu" src="./assets/icon-twitter.png" alt="Link para o Twitter"></img></a>
@@ -63,7 +64,7 @@
       </div>
     </main>
 
-    <section class="cards">
+    <section id="whatsNew" class="cards">
       <div class="card">
         <div class="card__item">
           <div class="card__back">
@@ -103,7 +104,7 @@
       </div>
     </section>
 
-    <section class="delivery">
+    <section id="delivery" class="delivery">
       <div class="bloco__delivery">
         <div class="delivery__info">
           <img src="./assets/logo_ifood.png" alt="Logo iFood">
@@ -136,6 +137,40 @@
       </div>
 
     </section>
+
+    <footer id="contact">
+      <div class="footer">
+        <div class="footer__logo">
+          <img src="./assets/logo-starbucks2.png" alt="">
+        </div>
+        <div>
+          <h1 class="footer__title">Lojas Participantes</h1>
+          <ul class="footer__tittle--content">
+            <li>Rua das Flores, 123 - Vila Esperança</li>
+            <li>Avenida do Sol, 456 - Jardim das Estrelas</li>
+            <li>Praça das Maravilhas, 789 - Centro Histórico</li>
+            <li>Alameda dos Sonhos, 321 - Jardim Encantado</li>
+            <li>Travessa da Imaginação, 567 - Vila dos Sonhos</li>
+            <li>Rua das Fantasias, 890 - Bairro das Ilusões</li>
+            <li>Parque Ipiranga, 996 - Zona Sul</li>
+          </ul>
+        </div>
+        <div>
+          <form class="form__news">
+            <h1>Sign up for our <span class="news__focus">newsletter</span>.</h1>
+            <span style="color: white; padding: 10px 0;" name="email-news">E-mail</span>
+            <input class="form__input" type="email" required placeholder="your email...">
+            <button class="form__button">Sign ip</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <p>Feito com codificação pura por Raphael Dias - @raphael.phdias</p>
+      <p>2023 - &copy;Artasian Forge Studio Web</p>
+      <p>Todos os Direitos Reservados</p>
+    </div>
+
 
     <script src="./JS/nav/index.js"></script>
   </body>

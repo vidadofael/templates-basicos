@@ -1,0 +1,95 @@
+footer {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  padding: 80px 120px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: first center;
+  
+}
+
+.footer__logo img {
+  width: 100px;
+  padding: 25px 0;
+}
+
+.footer__title,
+.form__news h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.footer__tittle--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px 0;
+}
+
+.footer__tittle--content li {
+  list-style: none;
+  color: rgb(221, 221, 221);
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.form__news {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 25px 0;
+}
+
+.news__focus {
+  background-color: white;
+  color: var(--cor-primaria);
+  letter-spacing: 2px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.form__button {
+  color: var(--cor-primaria);
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 15px 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.form__button:hover {
+    color: white;
+    background-color: var(--cor-primaria);
+    border: 1px solid white;
+    transform: scale(1.1);
+  }
+
+
+  .copy {
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 10px 25px;
+  }
+
+
+@media screen and (max-width: 986px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+}

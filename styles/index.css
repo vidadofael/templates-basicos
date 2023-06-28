@@ -12,3 +12,7 @@ body {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+
+:root {
+  --cor-primaria: #006241;
+}

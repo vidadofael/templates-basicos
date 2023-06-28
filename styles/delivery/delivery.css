@@ -19,7 +19,7 @@
 }
 
 .delivery__info img {
-    border-radius: 7px;
+  border-radius: 7px;
   max-width: 580px;
 }
 
@@ -36,20 +36,20 @@
 }
 
 .button__delivery {
-    color: white;
-    background-color: #006241;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 15px;
+  color: white;
+  background-color: #006241;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
   padding: 15px 25px;
   transition: 0.3s ease-in-out;
 }
 .button__delivery:hover {
-    color: #006241;
-    background-color: white;
-    border: 1px solid #006241;
-    transform: scale(1.1);
+  color: #006241;
+  background-color: white;
+  border: 1px solid #006241;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px) {
